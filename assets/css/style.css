@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-type-color: rgb(250, 255, 0);
+    --primary-text: "Lacquer", sans-serif;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    background-image: url("../img/epicface.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--primary-text);
+    color: var(--primary-type-color);
+
+    header {
+        text-align: center;
+        height: 100px;
+        line-height: 10vh;
+        text-shadow: 4px 1px rgb(0, 0, 0);  
+    }
+
+    .btrsound {
+        display: grid;
+        place-items: center;
+        width: 100%;
+        height: fit-content;
+
+        a {
+            position: relative;
+            color: var(--primary-type-color);
+            font-size: 3rem;
+            text-transform: uppercase;
+            text-decoration: none;
+
+            img {
+                width: 250px;
+                height: 50px;
+            }
+        }
+
+    }
+
+    .robloxsound {
+        display: grid;
+        place-items: center;
+        width: 100%;
+        height: fit-content;
+
+        a {
+            position: relative;
+            color: var(--primary-type-color);
+            font-size: 3rem;
+            text-transform: uppercase;
+            text-decoration: none;
+
+            img {
+                width: 250px;
+                height: 60px;
+            }
+        }
+
+    }
+
+}
