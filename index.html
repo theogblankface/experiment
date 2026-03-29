@@ -9,13 +9,23 @@
 </head>
 
 <body> <!-- body is what represents the content of an HTML document -->
-    <audio autoplay> <!-- audio defines embedded sound content -->
+    <div id="consent" class="overlay"> <!-- div defines a section in a document -->
+        <div class="overlay-content">
+            <h1>Hi there! This site plays audio/video content upon page loading and link hovering, all of which are not owned by the developer of this website.</h1>
+            <p>Please take note of that if you decide to proceed.</p>
+            <div class="buttons">
+                <button id="decline-btn">TAKE ME BACK</button>
+                <button id="accept-btn">CONTINUE</button>
+            </div>
+        </div>
+    </div>
+    <audio> <!-- audio defines embedded sound content -->
         <source src="assets/audio/windowsxp.mp3" type="audio/mp3">
     </audio>
     <header role="banner" class="primary"> <!-- header represents introductory content, typically a group of introductory or navigational aids -->
         <h1>Welcome back to the good ol' days!</h1>
     </header>
-    <div class="btrsound"> <!-- div defines a section in a document -->
+    <div class="btrsound">
         <a href="https://www.youtube.com/watch?v=0AwA5A1wE0o&list=RDEMtkhGzGjCmxChmxTD5ZACNg&start_radio=1" class="hoverLink">
             <img src="assets/img/bigtimerush.jpg" alt="Play Big Time Rush">
         </a> <!-- a creates a hyperlink to web pages, files, email addresses, locations within the current page, or anything else a URL can address -->
